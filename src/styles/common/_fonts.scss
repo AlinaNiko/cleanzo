@@ -1,0 +1,28 @@
+// Helpers
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+// Fonts
+@font-face {
+    font-family: 'Geometria';
+    font-display: swap;
+    src: local('Geometria'), url($fontDir + 'Geometria/Geometria.woff2') format('woff2'), url($fontDir + 'Geometria/Geometria.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    font-display: swap;
+    src: local('Geometria-Medium'), url($fontDir + 'Geometria/Geometria-Medium.woff2') format('woff2'), url($fontDir + 'Geometria/Geometria-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    font-display: swap;
+    src: local('Geometria-ExtraBold'), url($fontDir + 'Geometria/Geometria-ExtraBold.woff2') format('woff2'), url($fontDir + 'Geometria/Geometria-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}

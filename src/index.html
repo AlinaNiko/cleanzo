@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Сlean-ZO</title>
+
+    <link rel="preload" href="fonts/Geometria/Geometria.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria/Geometria-Medium.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria/Geometria-ExtraBold.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles/style.min.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__container container">
+        <picture class="main-header__logo-wrapper">
+          <source type="image/webp" srcset="images/all/logo.webp">
+          <img class="main-header__logo" src="images/all/logo.png" alt="Логотип">
+        </picture>
+        <p class="main-header__paragraph">Клининг, уборка, химчистка</p>
+        <p class="main-header__contacts contacts">
+					<a class="contacts__link contacts__link--viber" href="viber://chat?number=+79530125111"><span class="visually-hidden">Viber</span></a>
+					<a class="contacts__link contacts__link--whatsapp" href="whatsapp://send?phone=+79530125111"><span class="visually-hidden">WhatsApp</span></a>
+          <a class="contacts__link contacts__link--phone" href="tel:+79530125111">+7(953) 012-51-11</a>
+        </p>        
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="main-content__container container">
+        <h1 class="main-content__title">Уборка и&nbsp;химчистка <span class="main-content__title--small">в Чебоксарах недорого</span></h1>
+        <ul class="main-content__list">
+          <li class="main-content__item main-content__item--cleaning">Уборка квартир и&nbsp;домов</li>
+          <li class="main-content__item main-content__item--dry-cleaning">Химчистка ковров и&nbsp;мягкой&nbsp;мебели</li>
+					<li class="main-content__item main-content__item--legal-persons">Уборка для&nbsp;юр. лиц</li>
+					<li class="main-content__item main-content__item--window-cleaning">Мойка окон и&nbsp;фасадов</li>
+        </ul>
+        <form class="main-content__order-form order-form js-form" action="mail.php" method="POST">
+          <label class="order-form__title"><span class="visually-hidden">Ваше имя</span><input class="order-form__field" type="text" name="name" placeholder="Ваше имя"></label>
+          <label class="order-form__title"><span class="visually-hidden">Ваш телефон</span><input class="order-form__field" type="tel" name="phone" placeholder="Ваш телефон"></label>
+          <button class="order-form__button" type="submit">Заказать</button>
+        </form>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__container container">
+        <h2 class="main-footer__title visually-hidden">Юридическая информация</h2>
+        <p class="main-footer__proprietor">ИП Ружевич Н. С.</p>
+        <p class="main-footer__taxpayer-id">ИНН 212902647909</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="scripts/script.min.js"></script>
+  </body>
+</html>
