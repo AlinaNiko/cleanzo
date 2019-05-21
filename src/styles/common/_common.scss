@@ -19,6 +19,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background: $white;
   font: 400 16px/1.4 $Geometria;
   color: $grey;

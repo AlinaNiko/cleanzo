@@ -4,26 +4,25 @@
 
 
 .main-header {
-	padding: 40px 0;
+  position: relative;
+	padding: 20px 0;
   box-shadow: 0 0 33.82px 4.18px rgba(26, 26, 26, 0.17);
-  @include breakpoint (lg) {
-    padding: 20px;
-  }
 }
 
 .main-header__container {
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 1071px) {
-    justify-content: center;
+  @media (max-width: 849px) {
+    flex-direction: column;
   }
-} 
+}
 
 .main-header__logo-wrapper {
+  width: 158px;
+  height: auto;
   margin-right: 20px;
   @include breakpoint (md) {
     width: 150px;
-    height: auto;
   }
 }
 
@@ -34,62 +33,73 @@
 
 .main-header__paragraph {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
-  @include breakpoint (md) {
+  @media (max-width: 849px) {
     margin-top: 10px;
-    font-size: 22px;
+  }
+  @include breakpoint (md) {
+    font-size: 18px;
   }
 }
 
 .contacts {
-  @include breakpoint (md) {
-    width: 100%;
+  display: flex;
+  align-items: center;
+  @media (max-width: 849px) {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  color: $grey;
+  @media (max-width: 849px) {
     text-align: center;
+  }
+  @include breakpoint (md) {
+    font-size: 16px;
+  }
+}
+
+.contacts__wrapper--phone {
+  flex-direction: column;
+  margin-left: 25px;
+  @media (max-width: 849px) {
+    margin-left: 0;
   }
 }
 
 .contacts__link {
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: middle;
-  @media (max-width: 1071px) {
-    margin-top: 10px;
-  }
-  @include breakpoint (md) {
-    margin: 0;
-  }
+  display: block;
+  margin-top: 10px;
 }
 
 .contacts__link--viber {
-  width: 71px;
-  height: 74px;
-  background: url("../images/all/css_sprites.png") no-repeat;
-  background-position: -10px -10px;
-  @include breakpoint (md) {
-    transform: scale(0.8);
-  }
+  width: 44px;
+  height: 46px;
+  background: url("../images/all/css_sprites.png") -140px -10px no-repeat;
 }
 
 .contacts__link--whatsapp {
-  width: 65px;
-  height: 65px;
-  background: url("../images/all/css_sprites.png") no-repeat;
-  background-position: -101px -10px;
-  @include breakpoint (md) {
-    transform: scale(0.8);
-  }
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  background: url("../images/all/css_sprites.png") -140px -76px no-repeat;
 }
 
+
+
 .contacts__link--phone {
-  font-weight: 500;
-  font-size: 30px;
-  color: $grey;
+  color: inherit;
   &:hover {
     text-decoration: underline;
   }
   @include breakpoint (md) {
-    font-size: 22px;
+    font-size: 16px;
   }
   @include breakpoint (sm) {
     display: block;

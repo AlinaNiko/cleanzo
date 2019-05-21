@@ -5,12 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Сlean-ZO</title>
-
     <link rel="preload" href="fonts/Geometria/Geometria.woff2" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/Geometria/Geometria-Medium.woff2" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/Geometria/Geometria-ExtraBold.woff2" as="font" type="font/woff" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="styles/style.min.css">
+
+    <!--Yandex.Metrika counter-->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(53567455, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/53567455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!--Yandex.Metrika counter-->
+
   </head>
   <body>
     <header class="main-header">
@@ -20,26 +35,32 @@
           <img class="main-header__logo" src="images/all/logo.png" alt="Логотип">
         </picture>
         <p class="main-header__paragraph">Клининг, уборка, химчистка</p>
-        <p class="main-header__contacts contacts">
-					<a class="contacts__link contacts__link--viber" href="viber://chat?number=+79530125111"><span class="visually-hidden">Viber</span></a>
-					<a class="contacts__link contacts__link--whatsapp" href="whatsapp://send?phone=+79530125111"><span class="visually-hidden">WhatsApp</span></a>
-          <a class="contacts__link contacts__link--phone" href="tel:+79530125111">+7(953) 012-51-11</a>
-        </p>        
+        <div class="main-header__contacts contacts">
+          <p class="contacts__wrapper contacts__wrapper--messenger">
+            <a class="contacts__link contacts__link--viber" href="viber://chat?number=+79530125111"><span class="visually-hidden">Viber</span></a>
+            <a class="contacts__link contacts__link--whatsapp" href="whatsapp://send?phone=+79530125111"><span class="visually-hidden">WhatsApp</span></a>
+          </p>
+          <p class="contacts__wrapper contacts__wrapper--phone">
+            <a class="contacts__link contacts__link--phone" href="tel:+79913991984">+7(991) 399-19-84</a>
+            <a class="contacts__link contacts__link--phone" href="tel:+79530125111">+7(953) 012-51-11</a>
+          </p>
+        </div>
       </div>
     </header>
     <main class="main-content">
       <div class="main-content__container container">
-        <h1 class="main-content__title">Уборка и&nbsp;химчистка <span class="main-content__title--small">в Чебоксарах недорого</span></h1>
+        <h1 class="main-content__title">Уборка и&nbsp;химчистка <span class="main-content__title--small">в Чебоксарах и&nbsp;Новочебоксарске</span></h1>
         <ul class="main-content__list">
           <li class="main-content__item main-content__item--cleaning">Уборка квартир и&nbsp;домов</li>
-          <li class="main-content__item main-content__item--dry-cleaning">Химчистка ковров и&nbsp;мягкой&nbsp;мебели</li>
-					<li class="main-content__item main-content__item--legal-persons">Уборка для&nbsp;юр. лиц</li>
+          <li class="main-content__item main-content__item--dry-cleaning">Химчистка ковров и мягкой&nbsp;мебели</li>
+					<li class="main-content__item main-content__item--legal-persons">Уборка офисов, складов и&nbsp;т.д. (на&nbsp;постоянной основе)</li>
 					<li class="main-content__item main-content__item--window-cleaning">Мойка окон и&nbsp;фасадов</li>
         </ul>
+        <p class="main-content__paragraph">Закажи уборку, и мойка окон до&nbsp;5&nbsp;шт.&nbsp;<span class="main-content__paragraph-strong">бесплатно!</span></p>
         <form class="main-content__order-form order-form js-form" action="mail.php" method="POST">
           <label class="order-form__title"><span class="visually-hidden">Ваше имя</span><input class="order-form__field" type="text" name="name" placeholder="Ваше имя"></label>
           <label class="order-form__title"><span class="visually-hidden">Ваш телефон</span><input class="order-form__field" type="tel" name="phone" placeholder="Ваш телефон"></label>
-          <button class="order-form__button" type="submit">Заказать</button>
+          <button class="order-form__button" type="submit">Узнать стоимость</button>
         </form>
       </div>
     </main>
