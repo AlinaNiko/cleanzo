@@ -5,7 +5,7 @@
 
 .main-header {
   position: relative;
-	padding: 20px 0;
+	padding: 16px 0 13px;
   box-shadow: 0 0 33.82px 4.18px rgba(26, 26, 26, 0.17);
 }
 
@@ -35,11 +35,11 @@
   font-weight: 400;
   font-size: 20px;
   text-align: center;
+  @media (max-width: 993px) {
+    font-size: 18px;
+  }
   @media (max-width: 849px) {
     margin-top: 10px;
-  }
-  @include breakpoint (md) {
-    font-size: 18px;
   }
 }
 
@@ -57,11 +57,11 @@
   font-weight: 500;
   font-size: 18px;
   color: $grey;
+  @media (max-width: 993px) {
+    font-size: 16px;
+  }
   @media (max-width: 849px) {
     text-align: center;
-  }
-  @include breakpoint (md) {
-    font-size: 16px;
   }
 }
 
@@ -75,20 +75,22 @@
 
 .contacts__link {
   display: block;
-  margin-top: 10px;
+  @media (max-width: 849px) {
+    margin-top: 10px;
+  }
 }
 
 .contacts__link--viber {
   width: 44px;
   height: 46px;
-  background: url("../images/all/css_sprites.png") -140px -10px no-repeat;
+  background: url("../images/all/css_sprites.png") -205px -10px no-repeat;
 }
 
 .contacts__link--whatsapp {
   margin-left: 20px;
   width: 40px;
   height: 40px;
-  background: url("../images/all/css_sprites.png") -140px -76px no-repeat;
+  background: url("../images/all/css_sprites.png") -205px -76px no-repeat;
 }
 
 
